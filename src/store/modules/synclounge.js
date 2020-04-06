@@ -104,6 +104,7 @@ export default {
     socketConnect({ state, commit, rootState }, data) {
 
     	console.log('SOCKET-DATA', data);
+    	data.address = data.address + ':42888/slserver';
 
       return new Promise((resolve, reject) => {
         const address = data.address;

@@ -116,6 +116,7 @@ export default {
         if (addressCopy[address.length - 1] === '/') {
           addressCopy = address.slice(0, -1);
         }
+        addressCopy += ':42888/slserver';
         let ext = '';
         if (path) {
           ext = `/${path}`;

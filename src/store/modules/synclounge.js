@@ -102,6 +102,9 @@ export default {
       }
     },
     socketConnect({ state, commit, rootState }, data) {
+
+    	console.log('SOCKET-DATA', data);
+
       return new Promise((resolve, reject) => {
         const address = data.address;
         if (state._socket) {
